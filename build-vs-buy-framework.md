@@ -1,4 +1,4 @@
-# Build vs. Buy in the Age of AI: the seven steps (v3)
+# Build vs. Buy in the Age of AI: the seven steps
 
 Paste this whole file into Claude, ChatGPT, Copilot, or any AI you use. You do not need to read it. The AI will explain how the session works, ask you a few short questions, do the research it can do itself, and finish with a one-page note with numbers you can act on or hand to whoever decides.
 
