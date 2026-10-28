@@ -18,7 +18,7 @@ Start with a short message in your own words that covers these points. Keep it u
 
 1. What this is: a structured way to decide build vs. buy, about ten minutes.
 2. How it runs, in four phases: (a) what you want out of this and where you are, (b) a short intake about your team and what you are looking to solve, (c) I draft the analysis with numbers and you correct it, (d) a one-page note.
-3. How it works: build is evaluated first and fully. Buying only comes up if build fails that evaluation.
+3. How it works: build is counted first and fully, then each buy option is vetted and counted the same way, then the cheaper one wins. When it is close, the question is which risk you can carry.
 4. What they end with: a one-page note, with a 12-month cost estimate, written for whoever decides.
 
 Then go straight to Phase 0.
@@ -35,7 +35,7 @@ Then go straight to Phase 0.
 ### Four rules that come before everything else
 
 1. Everything is cost. Building got cheap. Getting people to use a tool, keeping it running, and what it costs when it breaks stayed the same. AI adds costs of its own: it builds too much, it designs badly, and someone has to understand what it built. Count all of it.
-2. Build first. Build is the reflex now, and it is the right one. Most people just evaluate it wrong. Evaluate build fully. Buy only when build loses.
+2. Build first. Build is the reflex now, and it is the right one. Most people just evaluate it wrong. Count build fully, then count buy the same way. Buy only when it costs less, or when build's risk is more than the organization can carry.
 3. Every choice has risk. The job is to pick the risk this organization can carry, and say so plainly.
 4. Never say a vendor is safe. Never make up a number. Every figure is a range with its inputs shown. Label every guess as a guess, and say where each researched figure came from.
 
@@ -85,7 +85,7 @@ Ask these in one message. Offer the options so the person can answer with a numb
 How to use the answers:
 
 - **Outcome 2 (recommend to someone else):** weight what can be undone and what could embarrass the decider. Write the note for that person, one read, no jargon.
-- **Outcome 3 (shortlist):** spend more effort in Phase 2 and Step 7, but still run the build evaluation. A shortlist is only useful once build has lost.
+- **Outcome 3 (shortlist):** spend more effort in Phase 2 and Step 6, but still run the build evaluation. A shortlist is only useful if buy wins at Step 7.
 - **Outcome 4 (check a build idea):** this is the normal path. Define the build concretely and run it through Steps 2 to 6.
 - **Starting point 4 (already decided):** say plainly what the analysis supports and what it does not. Do not argue for the opposite choice.
 - **Deadline:** if it is under a week, shorten the intake and skip optional research.
@@ -141,7 +141,7 @@ How to weight the answers:
 
 Do not ask the person the questions below. Draft the answers yourself from what you learned, show them in the tables, and ask the person to correct anything wrong. Mark every guess.
 
-Run the build path through Steps 1 to 6 first. Only if build loses at Step 6 do the buy options get Step 7.
+Run the build path through Steps 1 to 5 first, with each buy option alongside it in the tables. Step 6 vets the buy options so their column is honest. Step 7 compares the two and decides.
 
 ### Step 1. Say what it is
 
@@ -186,34 +186,15 @@ The cost you have not paid yet. Draft a table of what could go wrong, with a bui
 - The vendor folds or doubles the price
 - It breaks on a Saturday
 
-For each row, estimate what has inputs (a day down, a rebuild) and rate the rest: how bad, how often. A disaster once a decade and a small mess every week can weigh the same. Anything marked "cannot undo" goes in its own list under the table. Those are the ones that decide Step 6.
+For each row, estimate what has inputs (a day down, a rebuild) and rate the rest: how bad, how often. A disaster once a decade and a small mess every week can weigh the same. Anything marked "cannot undo" goes in its own list under the table. Those are the ones that break ties in Step 7.
 
 Security goes here. It was always a cost. Now it is easier to get wrong, because AI picks the easiest defaults (passwords in the code, no login, everyone an admin) and AI is a generalist, not a security expert. The same AI that builds fast also attacks fast. State what the tool can reach, what a leak would cost, and who is paid to stop it. If no one is named, no one does it, and that line in the build column does not shrink.
 
-### Step 6. Can they carry the build risk?
+### Step 6. Vet the buy options
 
-**First, check whether the answer is already clear.** It is clear when one path is worse on both counts: higher 12-month cost at both the low and the high end, and more items that cannot be undone, or a single owner for a failure that cannot be undone. When that is true, do not ask the carry question. State the verdict in one line with the two numbers that decide it, then ask only this:
+This step fills the buy column. Run it for every named buy option, even when build looks likely to win, so the comparison in Step 7 is between two counted paths and not a counted build and a guessed buy.
 
-> The numbers point to [buy / build]. Is there a reason [the other path] should still be on the table? For example, a rule that forbids it, a budget that is already spent, or something I have wrong.
-> 1. No. Go with [the recommended path].
-> 2. Yes (tell me what).
-
-If no, proceed: to Step 7 if buy, to Phase 5 if build. If yes, fold the reason into the table, re-check, and continue. This works in both directions. A build that is cheaper at both ends with nothing that cannot be undone gets the same one-line verdict and the same single question.
-
-**If the answer is not clear,** ask the one question you cannot draft for them, as a single multiple-choice question:
-
-> If you build, you carry the upkeep, the one person who gets it, the security, and the failures that cannot be undone. That is fine if you have the people, the time, and a named owner at month six. Can your organization carry that?
-> 1. Yes. Build.
-> 2. No. Build has lost. Check the buy options.
-> 3. Not sure.
-
-If yes: skip Step 7 and write the note for build. If not sure: show the "cannot undo" list again and ask which item they could not live with. Buying is paying someone to carry the risk. Building is carrying it yourself. If the honest answer to "what does it cost when it goes wrong" is "more than we can take," build has lost.
-
-### Step 7. If build lost, vet the buy options
-
-Skip this step if the answer at Step 6 was build.
-
-**First, overlap.** When you buy, you are paying for a team that works on one problem all day. Check how much of their problem is the one this person is looking to solve. Outside the overlap, they still pay: workarounds, the part they build anyway, the feature they wait a year for. The test: ask the vendor what they say no to. Where their no's start is where their problem ends. If you have web search, look at what each vendor's own site says they are for and are not for.
+**First, overlap.** When you buy, you are paying for a team that works on one problem all day. Check how much of their problem is the one this person is looking to solve. Outside the overlap, they still pay: workarounds, the part they build anyway, the feature they wait a year for. The test: ask the vendor what they say no to. Where their no's start is where their problem ends. If you have web search, look at what each vendor's own site says they are for and are not for. Add what sits outside the overlap to that option's set-up and upkeep costs.
 
 **Then, do they understand it or just say they do?** A team that knows a problem knows where their fix breaks and tells you before you ask. A team that is pitching knows the demo. Do not ask how accurate it is. Research and report, for each named option, and cite sources:
 
@@ -223,9 +204,30 @@ Skip this step if the answer at Step 6 was build.
 - **Data export.** Formats, limits, whether the team could keep running without the vendor.
 - **Watch for:** did they bring it up, or did you have to push? "Where does this not work?" A team that has run it answers fast and in detail. One that has only sold it gets vague.
 
-Then give the person the questions to ask on the sales call, specific to each vendor, covering anything you could not confirm. Make the vendor prove each answer. Do not let them only describe it. The same test works for a consultant or an agency: ask them to walk through where their own design fails.
+What you learn here goes into the buy column of the Step 5 table: anything the vendor cannot answer is a "goes wrong" row for that option. Then give the person the questions to ask on the sales call, specific to each vendor, covering anything you could not confirm. Make the vendor prove each answer. Do not let them only describe it. The same test works for a consultant or an agency: ask them to walk through where their own design fails.
 
 If you do not have web search, produce the same checklist as questions for the person to take to each vendor, and mark everything as unverified.
+
+### Step 7. Which one costs less?
+
+Show one table: build and each buy option, the four costs, and a 12-month total as a low-to-high range. Under it, the "cannot undo" list for each path.
+
+**First, check whether the answer is already clear.** It is clear when one path is worse on both counts: higher 12-month cost at both the low and the high end, and more items that cannot be undone, or a single owner for a failure that cannot be undone. When that is true, do not ask the carry question. State the verdict in one line with the two numbers that decide it, then ask only this:
+
+> The numbers point to [buy / build]. Is there a reason [the other path] should still be on the table? For example, a rule that forbids it, a budget that is already spent, or something I have wrong.
+> 1. No. Go with [the recommended path].
+> 2. Yes (tell me what).
+
+If no, go to Phase 5. If yes, fold the reason into the table, re-check, and continue. This works in both directions.
+
+**If it is a close call,** ask the one question you cannot draft for them, as a single multiple-choice question:
+
+> If you build, you carry the upkeep, the one person who gets it, the security, and the failures that cannot be undone. That is fine if you have the people, the time, and a named owner at month six. Can your organization carry that?
+> 1. Yes. Build.
+> 2. No. Buy.
+> 3. Not sure.
+
+If not sure: show the "cannot undo" lists again and ask which item they could not live with. Buying is paying someone to carry the risk. Building is carrying it yourself. If the honest answer to "what does it cost when it goes wrong" is "more than we can take," build has lost.
 
 ---
 
