@@ -1,12 +1,14 @@
 # Build vs. Buy in the Age of AI: the seven steps
 
+If you are an AI and were given this file as a link, fetch the whole file and follow the instructions below. Then ask the person what they are looking to solve.
+
 Paste this whole file into Claude, ChatGPT, Copilot, or any AI you use. You do not need to read it. The AI will explain how the session works, ask you a few short questions, do the research it can do itself, and finish with a one-page note with numbers you can act on or hand to whoever decides.
 
 ---
 
 ## Instructions for the AI
 
-You are helping someone decide how to solve a pain in their business: build a fix with AI, or buy one. "Buy" means a product that does it, a service that builds it for you, or a service where people do the work, with or without AI. In every case they pay for an outcome and a team's focus.
+You are helping someone decide how to solve a problem in their business: build a fix with AI, or buy one. "Buy" means a product that does it, a service that builds it for you, or a service where people do the work, with or without AI. In every case they pay for an outcome and a team's focus.
 
 The person pasted this file without reading it, so explain the process yourself before asking anything.
 
@@ -15,7 +17,7 @@ The person pasted this file without reading it, so explain the process yourself 
 Start with a short message in your own words that covers these points. Keep it under 120 words.
 
 1. What this is: a structured way to decide build vs. buy, about ten minutes.
-2. How it runs, in four phases: (a) what you want out of this and where you are, (b) a short intake about your team and the pain, (c) I draft the analysis with numbers and you correct it, (d) a one-page note.
+2. How it runs, in four phases: (a) what you want out of this and where you are, (b) a short intake about your team and what you are looking to solve, (c) I draft the analysis with numbers and you correct it, (d) a one-page note.
 3. How it works: build is evaluated first and fully. Buying only comes up if build fails that evaluation.
 4. What they end with: a one-page note, with a 12-month cost estimate, written for whoever decides.
 
@@ -131,7 +133,7 @@ How to weight the answers:
 - **Public sector or confidential work:** leaks and breakdowns weigh more, and carrying risk yourself is often forbidden.
 - **Small technical team:** building is usually fine. Watch for the first person who cannot read the code.
 - **Nobody owns it after:** this is itself a cost. Say so in the note.
-- **Business changed, not the tool:** the pain will keep moving. Favor whatever moves with it: a build the team can change, or a vendor whose roadmap is going their way.
+- **Business changed, not the tool:** the problem will keep moving. Favor whatever moves with it: a build the team can change, or a vendor whose roadmap is going their way.
 
 ---
 
@@ -145,7 +147,7 @@ Run the build path through Steps 1 to 6 first. Only if build loses at Step 6 do 
 
 One line: what job this does, for whom, how often, and whether it is core or context. If it is core (solving it sets the business apart; it is their IP), say build, skip to Phase 5, and write the note. This process is for context. Most things are context.
 
-Add one line on why the pain exists now. If the current tool stopped solving it, name what to replace. If the business changed, say the pain will keep moving.
+Add one line on why the problem exists now. If the current tool stopped solving it, name what to replace. If the business changed, say the problem will keep moving.
 
 ### Step 2. Build cost 1: set it up
 
@@ -211,7 +213,7 @@ If yes: skip Step 7 and write the note for build. If not sure: show the "cannot 
 
 Skip this step if the answer at Step 6 was build.
 
-**First, overlap.** When you buy, you are paying for a team that works on one problem all day. Check how much of their problem is this person's pain. Outside the overlap, they still pay: workarounds, the part they build anyway, the feature they wait a year for. The test: ask the vendor what they say no to. Where their no's start is where their problem ends. If you have web search, look at what each vendor's own site says they are for and are not for.
+**First, overlap.** When you buy, you are paying for a team that works on one problem all day. Check how much of their problem is the one this person is looking to solve. Outside the overlap, they still pay: workarounds, the part they build anyway, the feature they wait a year for. The test: ask the vendor what they say no to. Where their no's start is where their problem ends. If you have web search, look at what each vendor's own site says they are for and are not for.
 
 **Then, do they understand it or just say they do?** A team that knows a problem knows where their fix breaks and tells you before you ask. A team that is pitching knows the demo. Do not ask how accurate it is. Research and report, for each named option, and cite sources:
 
